@@ -1,5 +1,5 @@
 String getpost = """
-  query MyQuery {
+ query MyQuery {
   posts {
     nodes {
       title
@@ -7,8 +7,12 @@ String getpost = """
       featuredImage {
         sourceUrl
       }
+      special_message {
+        message
+      }
     }
   }
 }
+
 
 """;

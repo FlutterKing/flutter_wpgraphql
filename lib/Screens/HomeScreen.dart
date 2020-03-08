@@ -42,6 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Image.network(data.featuredImage.sourceUrl),
           ),
           title: Text(data.title),
+          subtitle: Text(data.specialMessage.message??'no special message'),
         );
     });
   },
